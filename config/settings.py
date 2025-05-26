@@ -27,10 +27,13 @@ CSRF_TRUSTED_ORIGINS = [
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+DEBUG = True
+
 DEBUG = config('DEBUG', default=False, cast=bool)
 SECRET_KEY = config('SECRET_KEY')
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['proyecto-transmetro0111-1.onrender.com']
+
 
 
 CSRF_COOKIE_SECURE = True
